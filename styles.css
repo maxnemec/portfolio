@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #F2F1E8;
+  
   color: #050533;
 }
 
@@ -10,6 +11,84 @@ section {
   flex-direction: column;
   display: flex;
   align-items: center;
+  justify-content: center; 
   min-height: 400px;
-  padding: 100px 20vw;
+  
 }
+
+.svg-background {
+  aspect-ratio: 900/600;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.divider-background {
+  aspect-ratio: 960/100;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.splash {
+  background-image: url('/assets/splash-waves.svg');
+}
+
+.divider-top {
+  background-image: url('/assets/top-divider-waves.svg');
+}
+
+.divider-bot {
+  background-image: url('/assets/bot-divider-waves.svg');
+}
+
+.blob-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+  z-index: 1;
+  
+
+}
+
+.blob-title::before {
+  content: "";
+  background:  url('assets/small-blob.svg'), url('assets/big-blob.svg');
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 700px;
+  width: 700px;
+  height: 700px;
+  z-index: -1;
+}
+
+.title-text {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+  color: #F2F1E8;
+
+}
+
+.subtitle-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #E34234;
+}
+
