@@ -2,6 +2,9 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #F2F1E8;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
   
   color: #050533;
 }
@@ -13,7 +16,62 @@ section {
   align-items: center;
   justify-content: center; 
   min-height: 400px;
+}
+
+section.skills {
   
+  display: grid;
+  align-items: initial;
+  justify-content: initial;
+  width: 80vw;
+ 
+}
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 400px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.project {
+  align-items: flex-start;
+  flex-direction: row;
+  min-height: 400px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+h0 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  color: #0D698B;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+}
+
+.web-checkers {
+  aspect-ratio: 1280/744;
+  width: 50vw;
+}
+
+.nutri-kit {
+  aspect-ratio: 750/1624;
+  background-image: url('/assets/recording.gif');
+  background-size: cover;
+  height: 90vh;
 }
 
 .svg-background {
@@ -98,8 +156,8 @@ section {
   top: 0;
   right: 0;
   background-image: url("assets/menu-icon.svg");
-  width: 5vw;
-  height: 5vw;
+  width: 3.5vw;
+  height: 3.5vw;
   z-index: 2;
   background-size: contain;
   background-repeat: no-repeat;
@@ -109,5 +167,21 @@ section {
   margin-top: 20px;
   margin-right: 20px;
   padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  aspect-ratio: 1;
+  
 }
 
