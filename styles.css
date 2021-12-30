@@ -9,6 +9,10 @@ body {
   color: #050533;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   position: relative;
   flex-direction: column;
@@ -24,7 +28,42 @@ section.skills {
   align-items: initial;
   justify-content: initial;
   width: 80vw;
+  
+}
+
+section.nutri-kit-project {
+  align-items: flex-start;
+  flex-direction: row;
+  min-height: 400px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+hr {
+  border: 1px solid #F2F1E8;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
  
+a {
+  color: #0077b6;
+}
+
+a:visited {
+  color: #350f49;
+}
+
+a.nav-element {
+  color: #F2F1E8;
+  text-decoration: none;
+}
+
+a.nav-element:hover {
+  color: #E34234;
 }
 
 .about {
@@ -38,15 +77,11 @@ section.skills {
   margin-right: 5vw;
 }
 
-.project {
-  align-items: flex-start;
-  flex-direction: row;
-  min-height: 400px;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
+
+.project.web-checkers {
+  flex-direction: column;
 }
+
 
 h0 {
   font-style: normal;
@@ -55,6 +90,7 @@ h0 {
   line-height: 56px;
   letter-spacing: -0.02em;
   color: #0D698B;
+
 }
 
 img {
@@ -62,10 +98,37 @@ img {
   height: 80%;
 }
 
+img.socials {
+  width: 30px;
+  height: 30px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 0;
+
+}
+
+li {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+li.nav-element {
+  padding-top: 12px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  color: #F2F1E8
+}
+
 .web-checkers {
   aspect-ratio: 1280/744;
-  width: 50vw;
+  margin-bottom: 20px;
+  width: 80vw;
 }
+
 
 .nutri-kit {
   aspect-ratio: 750/1624;
@@ -93,6 +156,7 @@ img {
 
 .splash {
   background-image: url('/assets/splash-waves.svg');
+  height: 100vh;
 }
 
 .divider-top {
@@ -111,7 +175,6 @@ img {
   flex-direction: column;
   z-index: 1;
   
-
 }
 
 .blob-title::before {
@@ -184,4 +247,29 @@ img {
   aspect-ratio: 1;
   
 }
+
+h3.contact-info {
+  margin-bottom: 1vh;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 240px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0D698B;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+}
+
+.main {
+  margin-left: 240px;
+}
+
 
