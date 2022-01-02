@@ -1,9 +1,13 @@
 const scrollOffset = 600;
 
+let about = false;
+let projects = false;
+let skills = false;
+let contact = false;
 
 
 
-window.addEventListener("scroll", (event) => {
+window.addEventListener("scroll", () => {
   let scroll = this.scrollY;
 
   const aboutNav = document.getElementById("about-nav");
@@ -24,8 +28,9 @@ window.addEventListener("scroll", (event) => {
 
   if(scroll > aboutScroll && scroll < projectsScroll) 
   {
-    console.log("aboutScroll: " + aboutScroll);
-    console.log("scroll: " + scroll);
+    about = true;
+    projects = false;
+    
     aboutNav.classList.add("curr-section");
     aboutDivider.classList.add("curr-section");
 
@@ -34,8 +39,10 @@ window.addEventListener("scroll", (event) => {
   }
   else if(scroll > projectsScroll && scroll < skillsScroll)
   {
-    console.log("projectsScroll: " + projectsScroll);
-    console.log("scoll: " + scroll);
+    projects = true;
+    about = false;
+    skills = false;
+    
     projectsNav.classList.add("curr-section");
     projectsDivider.classList.add("curr-section");  
 
@@ -46,8 +53,10 @@ window.addEventListener("scroll", (event) => {
   }
   else if(scroll > skillsScroll && scroll < contactScroll)
   {
-    console.log("skillsScroll: " + skillsScroll);
-    console.log("scoll: " + scroll);
+    skills = true;
+    projects = false;
+    contact = false;
+    
     skillsNav.classList.add("curr-section");
     skillsDivider.classList.add("curr-section");
 
@@ -58,8 +67,9 @@ window.addEventListener("scroll", (event) => {
   }
   else if(scroll > contactScroll)
   {
-    console.log("contactScroll: " + contactScroll);
-    console.log("scroll: " + scroll);
+    contact = true;
+    skills = false;
+
     contactNav.classList.add("curr-section");
     contactDivider.classList.add("curr-section");
 
@@ -68,6 +78,19 @@ window.addEventListener("scroll", (event) => {
   }
 
 });
+
+function barHover(elementID)
+{
+  console.log(elementID);
+  const element = document.getElementById(elementID);
+  element.classList.add("curr-section");
+}
+
+function barDeHighlight(elementID)
+{
+  const element = document.getElementById(elementID);
+  element.classList.remove("curr-section");
+  }
 
 function getScrollPosition(elementID)
 {

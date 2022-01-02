@@ -47,6 +47,9 @@ hr {
   margin-right: 12px;
   margin-bottom: 50px;
   margin-top: 0px;
+  transition-duration: 250ms;
+  transition-property: border;
+  
 }
 
 hr.curr-section {
@@ -68,6 +71,9 @@ a:visited {
 a.nav-element {
   color: #F2F1E8;
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: ease-in-out;
 }
 
 a:hover {
