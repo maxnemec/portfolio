@@ -19,7 +19,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center; 
-  min-height: 400px;
+
 }
 
 section.skills {
@@ -48,9 +48,20 @@ hr {
   margin-bottom: 50px;
   margin-top: 0px;
 }
+
+hr.content-divider {
+  border: 2px solid #0D698B;
+  margin-left: 0px;
+  
+  width: 300px;
+}
  
 a {
   color: #0077b6;
+}
+
+a.contact-me {
+  margin-top: 3rem;
 }
 
 a:visited {
@@ -62,7 +73,7 @@ a.nav-element {
   text-decoration: none;
 }
 
-a.nav-element:hover {
+a:hover {
   color: #E34234;
 }
 
@@ -70,7 +81,6 @@ a.nav-element:hover {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  min-height: 400px;
   margin-top: 1vh;
   margin-bottom: 1vh;
   margin-left: 5vw;
@@ -78,9 +88,7 @@ a.nav-element:hover {
 }
 
 
-.project.web-checkers {
-  flex-direction: column;
-}
+
 
 
 h0 {
@@ -90,7 +98,7 @@ h0 {
   line-height: 56px;
   letter-spacing: -0.02em;
   color: #0D698B;
-
+  margin-bottom: 2rem;
 }
 
 img {
@@ -101,6 +109,7 @@ img {
 img.socials {
   width: 30px;
   height: 30px;
+  margin-top: 2rem;
 }
 
 ul {
@@ -177,15 +186,15 @@ li.nav-element {
   
 }
 
-.blob-title::before {
+.blob-title:before {
   content: "";
   background:  url('assets/small-blob.svg'), url('assets/big-blob.svg');
   position: absolute;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 40vw 40vh;
-  width: 40vw;
-  height: 40vh;
+  background-size: 600px;
+  width: 600px;
+  height: 600px;
   z-index: -1;
 }
 
@@ -214,13 +223,16 @@ li.nav-element {
   color: #E34234;
 }
 
+
+
 .menu-icon {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   background-image: url("assets/menu-icon.svg");
-  width: 3.5vw;
-  height: 3.5vw;
+  width: 40px;
+  height: 40px;
   z-index: 2;
   background-size: contain;
   background-repeat: no-repeat;
@@ -248,9 +260,7 @@ li.nav-element {
   
 }
 
-h3.contact-info {
-  margin-bottom: 1vh;
-}
+
 
 .nav {
   position: fixed;
@@ -272,4 +282,38 @@ h3.contact-info {
   margin-left: 240px;
 }
 
+.center-in-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+@media screen and (max-width: 800px) {
+  .nav {
+    display: none;
+  }
+
+  .main {
+    margin-left: 0px;
+  }
+
+  section.nutri-kit-project {
+    align-items: center;
+    flex-direction: column;  
+  }
+
+  .blob-title:before {
+    background-size: 350px;
+    width: 350px;
+    height: 350px;
+  }
+
+  .title-text {
+    font-size: 40px;
+  }
+
+  .subtitle-text {
+    font-size: 25px;
+  }
+  
+}
