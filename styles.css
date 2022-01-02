@@ -42,18 +42,15 @@ section.nutri-kit-project {
 }
 
 hr {
-  border: 1px solid #F2F1E8;
+  border: 2px solid #F2F1E8;
   margin-left: 12px;
   margin-right: 12px;
   margin-bottom: 50px;
   margin-top: 0px;
 }
 
-hr.content-divider {
-  border: 2px solid #0D698B;
-  margin-left: 0px;
-  
-  width: 300px;
+hr.curr-section {
+  border: 2px solid #E34234;
 }
  
 a {
@@ -86,10 +83,6 @@ a:hover {
   margin-left: 5vw;
   margin-right: 5vw;
 }
-
-
-
-
 
 h0 {
   font-style: normal;
@@ -288,6 +281,10 @@ li.nav-element {
   align-items: center;
 }
 
+.curr-section {
+  color: #E34234 !important;
+}
+
 @media screen and (max-width: 800px) {
   .nav {
     display: none;
@@ -314,6 +311,10 @@ li.nav-element {
 
   .subtitle-text {
     font-size: 25px;
+  }
+
+  .web-checkers {
+    width: 95vw;
   }
   
 }
