@@ -5,12 +5,14 @@ body {
   font-size: 34px;
   line-height: 40px;
   letter-spacing: -0.02em;
-  
+
   color: #050533;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 div.button-container {
@@ -91,8 +93,8 @@ a.button {
   padding-top: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  color: #0D698B;
-  border: 2px solid #0D698B;
+  color: rgba(13, 105, 139, 1);
+  border: 2px solid rgba(13, 105, 139, 1);
   margin-right: 3rem;
   text-decoration: none;
   
@@ -100,7 +102,7 @@ a.button {
 
 a.button:hover {
   background-color: rgba(13, 105, 139, .75);
-
+  border: 2px solid rgba(13, 105, 139, .75);
   color: #F2F1E8;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
@@ -166,6 +168,7 @@ li.nav-element {
 
 .nutri-kit {
   aspect-ratio: 750/1624;
+  border-radius: 10px;
   background-image: url('/assets/recording.gif');
   background-size: cover;
   height: 90vh;
@@ -195,6 +198,7 @@ li.nav-element {
 
 .divider-top {
   background-image: url('/assets/top-divider-waves.svg');
+  margin-top: -2px;
 }
 
 .divider-bot {
@@ -343,6 +347,7 @@ li.nav-element {
 
   .web-checkers {
     width: 95vw;
+    
   }
   
 }
