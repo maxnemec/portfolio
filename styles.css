@@ -118,7 +118,7 @@ a.button:hover {
   margin-right: 5vw;
 }
 
-h0 {
+.h0 {
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -215,9 +215,23 @@ li.nav-element {
   
 }
 
-.blob-title:before {
+.blob {
+  position: absolute;
+  display: block; 
+  margin: auto;
+  justify-content: center;
+  box-sizing: border-box; 
+  overflow: visible;
+  /* width: 800px;
+  height: 800px; */
+  /* z-index: -2; */
+
+
+}
+
+/* .blob-title:before {
   content: "";
-  background:  url('assets/small-blob.svg'), url('assets/big-blob.svg');
+  background-image: url('assets/small-blob.svg');
   position: absolute;
   background-position: center;
   background-repeat: no-repeat;
@@ -225,7 +239,7 @@ li.nav-element {
   width: 600px;
   height: 600px;
   z-index: -1;
-}
+} */
 
 .title-text {
   font-size: 64px;
@@ -332,7 +346,7 @@ li.nav-element {
   }
 
   .blob-title:before {
-    background-size: 350px;
+    background-size: 800px;
     width: 350px;
     height: 350px;
   }

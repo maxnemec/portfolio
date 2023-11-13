@@ -12,10 +12,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>Maxwell Nemec</title>
-  <script src="main.js"></script>
+  <script type="module" src="JS/main.js"></script>
+  <script src="JS/navigation.js"></script>
+  
 </head>
 <body>
-  
   <button class="menu-icon"></button> 
   <div class="nav">
     <ul>
@@ -40,10 +41,18 @@
   
   <div class="main">
     <Section class="svg-background splash">
+      <svg class="blob"  id="blobs" viewPort="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="blob1-path"  d="" fill="#0D698B"/>
+      </svg>
+      <svg class="blob"  id="blobs" viewPort="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="blob2-path"  d="" fill="#050533"/>
+      </svg>
       <div class="blob-title">
+        
         <div class="title-text">
           Maxwell Nemec
         </div>
+      
         <div class="subtitle-text">
           Software Engineer
         </div>
@@ -53,19 +62,18 @@
     <Section id="about" class="about">
       <h0>About Me</h0>
       <p>
-        I am studying Software Engineering at the Rochester Institute of Technology. I am fascinated with all things software and technology. 
-        Lately, I have also been enamored with how cities function and what can be done to make them more livable for everyone.
+        I am a 4th year Software Engineering Student at Rochester Institute of Technology. I am fascinated with all things software and technology and I am always
+        challenging myself to keep learning and improving.. 
+        
       </p>
       <p>
-        In my free time, I use my construction experience to volunteer and help run the RIT Habitat for Humanity club. 
-        I also have been really enjoying rock climbing and going multiple times a week.
+        In my free time, I use my construction experience to volunteer and help run the RIT Habitat for Humanity club, ride bikes, and rock climb.
       </p>
       <p>
-        I just finished a software engineering internship at Northwestern Mutual in Milwaukee WI. 
-        I gained many valuable skills and I am now looking forward to what comes next. Currently, I am applying for new internships for Summer 2023.
+        I am currently a Software Engineer Co-op at Ansys and I am looking for a Co-op for Spring and Summe
       </p>   
       <div class="button-container">
-        <a class="button" href="assets/MaxNemecResume8-30-22.pdf" target="_blank">Resume</a>
+        <a class="button" href="assets/Max_Nemec_Resume.pdf" target="_blank">Resume</a>
         <a class="button" href="#projects">Projects</a>
       </div>
       
@@ -89,10 +97,9 @@
         </p>
 
         <div class="button-container">
-          <a class="button" href="https://nutrikit.herokuapp.com/" target="_blank">Live Site</a>
+          <!-- <a class="button" href="https://nutrikit.herokuapp.com/" target="_blank">Live Site</a> site is down--> 
           <a class="button" href="https://github.com/maxnemec/nutrikit" target="_blank">GitHub</a>
         </div>
-
       </div>
     </Section>
     <div class="divider-background divider-bot"></div>
@@ -192,7 +199,7 @@
         </li>
         <li>
           <a href="https://github.com/maxnemec">
-            <img class="socials" alt="linkedin" src="assets/logos/github-logo.svg"></a>
+            <img class="socials" alt="linkedIn" src="assets/logos/github-logo.svg"></a>
           </a>
         </li>
       </ul>
